@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bleek Studios</title>
+  <style>
+    /* General Styling */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #1e1e1e;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .navbar h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .navbar a {
+      color: #f1f1f1;
+      text-decoration: none;
+      font-size: 18px;
+      margin-left: 20px;
+    }
+
+    /* About Us Section */
+    .about-us {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #1a1a1a;
+      border-bottom: 1px solid #333;
+    }
+
+    .about-us h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .about-us p {
+      font-size: 18px;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Main Content */
+    .main-content {
+      padding: 50px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .content-item {
+      background-color: #222;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .content-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .content-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .content-item h2 {
+      margin-top: 15px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #f1f1f1;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <h1>Bleek Studios</h1>
+    <a href="mailto:contact@bleekstudios.com">Contact Us</a>
+  </div>
+
+  <!-- About Us Section -->
+  <div class="about-us">
+    <h2>About Bleek Studios</h2>
+    <p>
+      At Bleek Studios, we specialize in creating dynamic and engaging digital experiences that 
+      bring ideas to life. From custom websites to cutting-edge applications, we are dedicated to 
+      crafting solutions that meet your needs and exceed your expectations. Whether you're looking 
+      to showcase your brand or build a complex platform, we have the expertise to make it happen.
+    </p>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Sample Content Block 1 -->
+    <div class="content-item">
+      <img src="https://via.placeholder.com/300" alt="Project Image 1">
+      <h2>Project 1</h2>
+      <p>Description of the first project showcased here. Click <a href="#">here</a> to learn more.</p>
+    </div>
+
+    <!-- Sample Content Block 2 -->
+    <div class="content-item">
+      <img src="https://via.placeholder.com/300" alt="Project Image 2">
+      <h2>Project 2</h2>
+      <p>Description of the second project. Click <a href="#">here</a> to learn more.</p>
+    </div>
+
+    <!-- Sample Content Block 3 -->
+    <div class="content-item">
+      <img src="https://via.placeholder.com/300" alt="Project Image 3">
+      <h2>Project 3</h2>
+      <p>Description of the third project. Click <a href="#">here</a> to learn more.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Bleek Studios. All

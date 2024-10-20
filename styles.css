@@ -44,20 +44,21 @@ body {
   position: relative;
   height: 100vh;
   background-image: url("assets/background2.jpg");
-  background-size: cover;
+  background-size: cover; /* Ensures the image covers the hero section */
   background-position: center;
-  background-attachment: fixed;
-  /* Enables parallax effect */
+  background-attachment: fixed; /* Enables parallax effect */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
   overflow: hidden;
 }
 
 /* Responsive Adjustments for Hero Section */
 @media (max-width: 768px) {
   .hero {
-    background-position: center top;
-    /* Crop to focus on the top part for mobile */
-    background-size: cover;
-    /* Maintain coverage without stretching */
+    height: 80vh; /* Adjust height for smaller screens to improve fit */
+    background-size: cover; /* Prevent duplication on smaller screens */
+    background-position: center top; /* Focus on top of the image if it fits better */
+    background-attachment: scroll; /* Disable parallax effect for mobile for better UX */
+    background-repeat: no-repeat; /* Explicitly prevent image duplication */
   }
 }
 

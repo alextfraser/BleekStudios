@@ -9,7 +9,7 @@
     "lint": "tsc --noEmit && eslint . --fix",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist --cname bleekstudios.com"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

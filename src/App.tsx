@@ -5,6 +5,7 @@ import { Services } from '@/components/sections/Services';
 import { Portfolio } from '@/components/sections/Portfolio';
 import { Contact } from '@/components/sections/Contact';
 import { Toaster } from '@/components/ui/toaster';
+import { Ai } from '@/components/sections/Ai';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <main className="overflow-hidden">
         <Hero />
         <Services />
+        <Ai />
         <Portfolio />
         <Contact />
       </main>
